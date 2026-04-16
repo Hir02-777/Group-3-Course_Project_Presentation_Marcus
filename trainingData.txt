@@ -1,0 +1,6 @@
+0 0 -1 FaceUp
+0 0 1 FaceDown
+0 -1 0 Portrait
+0 1 0 PortraitUpsideDown
+-1 0 0 LandscapeLeft
+1 0 0 LandscapeRight

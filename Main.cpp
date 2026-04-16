@@ -19,11 +19,13 @@ int main() {
         return 0;
     }
 
-    if (choice != 1) {
-        std::cout << "This classifier is not implemented yet.\n";
-        delete clf;
-        return 0;
-    }
+    //sorry, im taking this condition out
+
+    //if (choice != 1) {
+    //    std::cout << "This classifier is not implemented yet.\n";
+    //    delete clf;
+    //    return 0;
+    //}
 
     auto trainingData = FileManager::loadTrainingData("trainingData.txt");
     clf->train(trainingData);
