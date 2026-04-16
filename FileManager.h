@@ -4,14 +4,29 @@
 #include <vector>
 #include <string>
 #include "DataPoint.h"
-
+/**
+* @file FileManager.h
+* @brief handles importing and exporting of .txt files
+*/
 class FileManager {
 public:
-    static std::vector<DataPoint> loadTrainingData(const std::string& filename);
-    static std::vector<Vector3D> loadUnknownData(const std::string& filename);
-    static void saveResults(const std::string& filename,
-        const std::vector<Vector3D>& inputs,
-        const std::vector<std::string>& outputs);
+	/**
+	* @brief Loads training data.
+	* @filename The name of target file.
+	*/
+	static std::vector<DataPoint> loadTrainingData(const std::string& filename);
+	/**
+	* @brief Loads unknown data.
+	* @filename The name of target file.
+	*/
+	static std::vector<Vector3D> loadUnknownData(const std::string& filename);
+	/**
+	* @brief Saves results to .txt file.
+	* @filename The name of target file.
+	*/
+	static void saveResults(const std::string& filename,
+		const std::vector<Vector3D>& inputs,
+		const std::vector<std::string>& outputs);
 };
 
 #endif
